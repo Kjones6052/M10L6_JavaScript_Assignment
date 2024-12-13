@@ -41,13 +41,13 @@ intervals and timeouts to update the timer display dynamically and notify the us
 
 Task 1: Countdown Timer
 Create a countdown timer that starts from a user-defined duration (in seconds) and updates every second until it reaches zero. Use setInterval to update the timer display.
-status: incomplete
+status: COMPLETE
 
 Task 2: Delayed Notification
 Implement a function that displays a notification after a specified delay (in milliseconds) using setTimeout.
-status: incomplete
+status: COMPLETE
 
 Task 3: Repeat Notification
 Develop a function that repeatedly displays a notification at fixed intervals until the user dismisses it. Use setInterval to schedule the notifications.
-status: incomplete
+status: COMPLETE
 
