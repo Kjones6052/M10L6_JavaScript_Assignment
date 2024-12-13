@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M10L6 Assignment</title>
-    <script src="document_manipulation.js" defer></script>
+    <link rel="stylesheet" href="assignment.css">
 </head>
 <body>
-    
+
+    <!-- Header Section with Assignment Info -->
+    <header>
+        <h1>Async JavaScript and API Interaction, Module 10, Lesson 6</h1>
+    </header>
+
+    <!-- Part 1: Exploring Asynchronous JavaScript -->
+    <div class="container">
+        <h3>Marvel Character Information</h3>
+        <div id="marvel-info"></div>
+        <p>
+            Note for assignment:
+            I noticed that it seems like the Marvel API is not responding. When I tried to search for 
+            specific characters to try and test the code, I could not find a page that was not producing 
+            a 404 error.
+        </p>
+    </div>
+    <script src="asynchronous.js" defer></script>
+
+    <!-- Part 2: Implementing Timers in JavaScript -->
+    <div class="container">
+        <h3>Implementing Timers</h3>
+
+        <!-- Task 1: countdown timer -->
+        <div>
+            <label for="timerDuration">Enter timer duration in seconds:</label>
+            <input type="number" id="timerDuration" placeholder="Seconds">
+            <button id="startButton">Start Timer</button>
+            <p id="countdownTimer"></p>
+        </div>
+
+        <!-- Task 2: timeout display -->
+        <div id="timeoutDisplay">
+            
+        </div>
+        
+        <!-- Task 3: button to stop repeated alert -->
+        <button id="stopAlert">Click here to stop alerts</button>
+    </div>
+    <script src="timers.js" defer></script>
+
 </body>
 </html>
