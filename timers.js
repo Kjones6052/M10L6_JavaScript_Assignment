@@ -39,11 +39,11 @@ setTimeout(function() {
 
 
 // Task 3: repeated message
-let repeatMessage = setInterval(function() {
-    alert("Time to click ok!")
-}, 5000)
+// let repeatMessage = setInterval(function() {
+//     alert("Time to click ok!")
+// }, 5000)
 
-// stop repeated message
-stopAlert.addEventListener("click", () => {
-    clearInterval(repeatMessage)
-})
+// // stop repeated message
+// stopAlert.addEventListener("click", () => {
+//     clearInterval(repeatMessage)
+// })

@@ -2,13 +2,12 @@
 
 // Task 1: obtain key
 const PUBLIC_KEY = 'ba1de457fe1a5da3855d1b2f84fb0024'; // your public key
-const PRIVATE_KEY = 'a30b819cd5eb81430c6411f2904a4db97046dcd7'; // youur private key
+const PRIVATE_KEY = ''; // youur private key
 
 // Task 2: fetch Marvel character data
 async function fetchMarvelData() {
-    const ts = Number(new Date());
-    const hash = md5.create();
-    hash.update(ts + PRIVATE_KEY + PUBLIC_KEY);
+    const ts = 1;
+    const hash = "a783b08900da50084275249ef1c72bc7";
     try {
         const response = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=${ts}&orderBy=name&limit=10&apikey=${PUBLIC_KEY}&hash=${hash}`);
         const characterData = response.json();
@@ -16,8 +15,7 @@ async function fetchMarvelData() {
     } catch (error) {
         console.error('Error handling images:', error);
         return null;
-    };
-    
+    };  
 }
 
 // Task 3: update interface with character data
@@ -25,11 +23,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const characterData = await fetchMarvelData('');
     const marvelInfoElement = document.getElementById('marvel-info');
 
-    // Displaying Marvel character data
-    marvelInfoElement.innerHTML = `
-        <h2>${characterData.name}</h2>
-        <img src="${characterData.thumbnail}" alt="${characterData.name}">
-        <h3>Description:</h3>
-        <p>${characterData.description}</p>
-        `;
+    for (const value in characterData) {
+        marvelInfoElement.innerHTML = `
+            <div>
+            <h2>Character:</h2>
+            <p>${value}</p>
+            </div> `;
+    };
 });
