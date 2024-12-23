@@ -1,13 +1,13 @@
 // JavaScript file containing all the JavaScript code for the task to be completed under Part 1: Exploring Asynchronous JavaScript.
 
 // Task 1: obtain key
-const PUBLIC_KEY = 'ba1de457fe1a5da3855d1b2f84fb0024'; // your public key
-const PRIVATE_KEY = ''; // youur private key
+const PUBLIC_KEY = ''; // your public key
+const PRIVATE_KEY = ''; // your private key
 
 // Task 2: fetch Marvel character data
 async function fetchMarvelData() {
     const ts = 1;
-    const hash = "a783b08900da50084275249ef1c72bc7";
+    const hash = "";
     try {
         const response = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=${ts}&orderBy=name&limit=10&apikey=${PUBLIC_KEY}&hash=${hash}`);
         const characterData = response.json();
